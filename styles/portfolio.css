@@ -1,0 +1,222 @@
+/* common shear styles */
+ body{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+ }
+ .text-primery{
+    color: #FD6E0A;
+ }
+ .btn-primery{
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 15px 35px;
+ }
+/* nav related styles  */
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 200px;
+    /* sokol nav ke akoi line a ante align items use korte hobe  */
+}
+.web-title{
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+nav > ul{
+    display:flex;
+    align-items: center;
+}
+nav li {
+    list-style: none;
+    margin-right: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: #474747;
+
+}
+/* header background color  */
+.header{
+    background-color: #e5f4c029;
+    background-image:url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right,top left;
+}
+.banner{
+    padding: 30px 30px 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .banner-content{
+    max-width: 500px; */
+}
+.banner.profile-pic{
+    width: 500px;
+}
+.banner-grit{
+    font-size: 45px;
+    color: #474747;
+    margin: 0;
+}
+.banner-title{
+    font-size: 85px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.banner-discription{
+    font-size: 20px;
+    size: 30px;
+
+}
+/* main section styles */
+main{
+    max-width:1140px ;
+    /* justify-content: center; */
+    margin: 0 auto;
+    
+}
+main section{
+    margin-top: 130px;
+}
+
+/* about section styles */
+.about{
+    border-radius: 10px;
+    background-color: azure;
+    padding: 130px;
+    margin: 130px;
+}
+.section-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+}
+.section-discription{
+    text-align: center;
+    font-size: 18px;
+    color: #757575;
+}
+.about-info-conteiner{
+    display: flex;
+    justify-content: space-between;
+
+}
+.about-info{
+  text-align: center;
+}
+/* skills section styles */
+#what-i-do-section-discription{
+
+    padding: 30px 150px;
+    color: #757575;
+}
+
+.skill-section{
+    padding: 30px;
+    border-radius: 5px;
+    background: rgb(246, 235, 213);
+    box-shadow: 0 2px 5px 5px ;
+    
+}
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
+/* resume colom styles */
+.resume-colom-title{
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+}
+.resume-container{
+    display: flex;
+    gap: 50px;
+}
+.resume-items-institute,.resume-discription{
+    color: #757575;
+}
+.dwnld-cv{
+    text-align: center;
+    margin-top: 50px;
+}
+/* footer styles */
+footer{
+    display: flex;
+    gap: 100px;
+    padding: 130px 230px;
+}
+.footer-colum{
+    width: 50%;
+   
+}
+.social-link{
+    margin-right: 25px;
+}
+.contact input, textarea{
+    display: block;
+    margin-bottom: 25px;
+    padding:18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    /* border:0; */
+    width: 100%;
+
+}
+.hide{
+    display: none;
+}
+/* responsive styles */
+
+/* small device */
+@media screen and (max-width:576px) {
+
+    .header{
+        background-image: none;
+    } 
+      
+     .banner, nav,
+      .skills-container, .resume-container,.about-info-conteiner{
+        flex-direction: column;
+        padding-left: 10px;
+      }
+      #what-i-do-section-discription{
+        padding: 20px;
+      }
+      footer{
+        flex-direction: column;
+        padding: 10px;
+        
+      }
+      .footer-colum{
+        width: 100%;
+      }
+      .contact input,textarea{
+        padding: 5px;
+        width: 100%;
+      }
+ 
+      .banner{
+        justify-content: center;
+        padding: 20px;
+      }
+     .about{
+        padding: 10px;
+        margin: 10px;
+     }
+     .btn-primery{
+        margin-top: 10px;
+     }
+}
